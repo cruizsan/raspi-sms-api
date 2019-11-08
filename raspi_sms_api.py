@@ -13,7 +13,7 @@ def console(cmd):
     return p.returncode, out, err
 
 
-@app.route('/send/sms', methods=["GET", "POST"])
+@app.route('/send/sms', methods=["POST"])
 def send_sms():
     number = request.values.get("number")
     text = request.values.get("text")

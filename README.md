@@ -32,4 +32,5 @@ gunicorn3 -w 4 --bind 0.0.0.0:8888 wsgi:app -n rasp_sms_api
 ### supposons un domaine apisms.ltd
 ```
 curl -X POST http://apisms.ltd:8888/send/sms -F "number=047276****" -F "text=mon premier sms"
+curl http://apisms.ltd:8888/send/sms&number=047276****&text="mon premier sms"
 ```
