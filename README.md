@@ -13,7 +13,7 @@ pip3 install flask
 sudo apt install gammu
 gammu-detect > /etc/gammurc
 # on test
-gammu sendsms TEXT <phoneNumber> -text <monTexte>
+gammu sendsms TEXT <phoneNumber> -text "monTexte"
 ```
 
 # Execution
